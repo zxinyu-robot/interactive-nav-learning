@@ -1,0 +1,45 @@
+{
+  "seeds": [0, 1],
+  "evaluation_seeds": [10, 11],
+  "env": {
+    "world_size": 6.0,
+    "num_obstacles": 2,
+    "max_steps": 30,
+    "sensor_rays": 12
+  },
+  "model": {
+    "sensor_dim": 12,
+    "hidden_dim": 32
+  },
+  "teacher_corrections": [
+    {
+      "kind": "change_goal",
+      "token": "new_goal",
+      "step": 8,
+      "target": [1.0, 5.0]
+    },
+    {
+      "kind": "stop",
+      "token": "stop",
+      "step": 15
+    },
+    {
+      "kind": "continue",
+      "token": "continue",
+      "step": 17
+    }
+  ],
+  "train": {
+    "epochs": 1,
+    "learning_rate": 0.003,
+    "seed": 0
+  },
+  "dagger": {
+    "iterations": 1,
+    "episodes_per_iteration": 1,
+    "beta_start": 0.5,
+    "beta_end": 0.5,
+    "train_epochs": 1,
+    "seed": 0
+  }
+}
