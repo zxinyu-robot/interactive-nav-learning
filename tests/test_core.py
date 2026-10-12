@@ -163,5 +163,5 @@ def test_metric_calculation() -> None:
     assert np.isclose(report["collisions_per_100m"], 100 / 15)
     assert report["interventions_per_episode"] == 1
     assert report["correction_response_steps"] == 2
-    assert report["control_smoothness"] == 0.3
+    assert np.isclose(report["control_smoothness"], 0.3)
     assert report["ask_rate"] == 0.05
