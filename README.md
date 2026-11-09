@@ -1,3 +1,5 @@
+> **本仓库已并入 [embodied-learning-baselines-](https://github.com/zxinyu-robot/embodied-learning-baselines-)（目录 `interactive_nav/`），此处只读归档，后续维护在新仓库进行。**
+
 # Interruptible Interactive Navigation Learning
 
 **我们提出了一种可中断交互式导航学习框架。**
